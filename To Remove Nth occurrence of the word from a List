@@ -1,0 +1,13 @@
+def non_repeating(list):
+    s = set()
+    for i in list:
+        s.add(i)
+    list.clear()
+    for j in s:
+        list.append(j)
+    return(list)
+
+mylist=[1,2,3,4,1,3,9,2]
+print(non_repeating(mylist))
+
+# output is [1, 2, 3, 4, 9]
