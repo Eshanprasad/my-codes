@@ -1,0 +1,6 @@
+list = [1,2,3,4,5]
+tup=()                            # create a tuple
+tup = (list[-1] , list[0])        # arrange last element of list as first element of tuple  and  first element of list as last element of tuple
+list[0] , list[-1] = tup          # therefore, list[0] will be assigned as first element of tuple (first element of tuple is last element of list)
+                                  # list[-1] will be assigned as second element of tuple (second element of tuple is first element of list)
+print(list)                       # output: [5,2,3,4,1
