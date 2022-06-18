@@ -1,0 +1,6 @@
+list=[1,2,3,4,5,6]
+a=len(list)
+temp=list[a-1]          # storing the last element in a temporary variable
+list[a-1]=list[0]
+list[0]=temp
+print(list)              # output = [6,2,3,4,5,1]
