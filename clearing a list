@@ -1,0 +1,27 @@
+# CLEARING A LIST
+
+# Approach 1 : Using clear() function
+mylist=[1,2,3,4,5]
+print('before clearing: ',mylist)
+mylist.clear()
+print('after clearing: ',mylist)
+
+
+# Approach 2 : initialise the list with no value
+mylist=[1,2,3,4,5]
+print('Before clearing: ',mylist)
+mylist=[]
+print('After clearing: ',mylist)
+
+# Approach 3 : Using *=0
+mylist=[1,2,3,4,5]
+print('Before clearing: ',mylist)
+mylist*=0
+print('After clearing: ',mylist)
+
+
+# Approach 4 : using del mylist[:] method
+mylist=[1,2,3,4,5]
+print('Before clearing: ',mylist)
+del mylist[:]
+print('After clearing: ',mylist)
