@@ -1,0 +1,10 @@
+list=[1,2,4,6,78,9,12,4,56,6,8,9]
+element=int(input('enter any element: '))
+flag=0
+for i in list:
+    if element == i:
+        print('element found')
+        flag=1
+        break
+if flag==0:
+    print('element not found')
