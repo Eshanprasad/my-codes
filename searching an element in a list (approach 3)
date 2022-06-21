@@ -1,0 +1,7 @@
+list=[1,2,4,,5,7,9,0]
+element=int(input('enter any element: '))
+
+if element in list:
+    print('Element found')
+else:
+    print('Element not found')
