@@ -1,0 +1,12 @@
+# Reversing a list
+
+# Approach 1 : using reverse() function
+list=[1,2,3,4,5]
+list.reverse()
+print(list)
+
+
+# Approach 2 : using slicing technique
+list=[1,2,3,4,5]
+list2=list[::-1]
+print(list2)
