@@ -1,0 +1,23 @@
+# copying a list
+
+# Approach 1 : using slicing technique
+list=[1,2,3,4,5]
+list_copy=list[:]
+print(list_copy)
+
+# Approach 2 : using extend() method
+list=[1,2,3,4,5]
+list_copy=[]
+list_copy.extend(list)
+print(list_copy)
+
+# Approach 3 : using .copy() method
+list=[1,2,3,4,5]
+list_copy=list.copy()
+print(list_copy)
+
+
+# Approach 4 : using list comprehension
+list=[1,2,3,4,5]
+list_copy=[i for i in list]
+print(list_copy)
