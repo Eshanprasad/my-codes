@@ -1,0 +1,10 @@
+string = input('Enter any word: ')
+
+# string[:] = string[::] = string[::1]
+
+# string[::-1] , string will be reversed
+
+if string[:] == string[::-1]:
+    print('Palindrome')
+else:
+    print('Not palindrome')
