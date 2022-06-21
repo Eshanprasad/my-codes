@@ -1,0 +1,13 @@
+# Extracting URL from the text
+
+
+import re
+str='My github acc is : https://github.com/Eshanprasad/'
+
+# http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+     is the regular expression
+
+a = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+' , str)
+print(a)
+
+# the output gives the URL's present in the string
+# output is : ['https://github.com/Eshanprasad/my-codes/tree/main']
