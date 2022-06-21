@@ -1,0 +1,26 @@
+# input : welcome to python programming
+# output : programming python to welcome
+
+
+# Approach 1
+
+string = "welcome to python programming"
+words = string.split(' ')                    # splits the string according to space
+words.reverse()
+for i in words:
+    print(i,"",end="")                       # output: programming python to welcome
+    
+
+
+
+# Approach 2
+string = "welcome to python programming"
+words = string.split(' ')
+words = words[::-1]
+output = " ".join(words)                      # joins elements in words separated by space between elements
+print(output)                                 #  # output: programming python to welcome
+
+    
+    
+    
+   
