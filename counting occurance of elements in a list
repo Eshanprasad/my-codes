@@ -1,0 +1,31 @@
+# Approach 1 : manual code (without using any operators)
+
+list = [1, 2, 3, 4, 5, 1, 7, 1, 8]
+element = int(input('enter any word: '))
+count = 0
+for i in list:
+    if i == element:
+        count += 1
+
+if count != 0:
+    print(element, "occured", count,
+          "times in the list")  # print("{} occured {} times in the list".format(element,count))
+
+else: print('Element not found')
+
+
+
+# Approach 2 : using count(element) operator
+list = [1, 2, 3, 4, 5]
+element = int(input('enter any element :'))
+print("count of element is:", list.count(element))
+
+
+
+
+# Approach 3
+from collections import Counter
+list = [1,2,3,4,5,2,1,7]
+ele =int(input('enter any element: '))
+dic = Counter(list)                                                   # therefore dic ={1: 2, 2: 2, 3: 1, 4: 1, 5: 1, 7: 1}
+print("{} occured {} times in the list".format(ele,dic[ele]))
