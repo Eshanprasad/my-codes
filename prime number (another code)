@@ -8,6 +8,6 @@ if n>1:
     if count>2:
         print('not prime number')
     else:
-        print('Not prime number')
+        print('prime number')
 else:
     print('Not prime number')
