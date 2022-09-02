@@ -8,3 +8,20 @@ else:
             break
     else:
         print('Prime number')
+
+
+
+
+# While loop
+n = int(input('enter any number:'))
+d = 2
+flag = False
+while d < n:
+    if n % d == 0:
+        flag = True
+    d = d+1
+
+if flag == True:
+    print('Not prime number')
+else:
+    print('prime')
