@@ -29,6 +29,7 @@ c.feature4()
 c.feature5()
 
 """
+output:
 its feature 1
 its feature 2
 its feature 3
