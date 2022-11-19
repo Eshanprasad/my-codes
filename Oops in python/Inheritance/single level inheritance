@@ -1,0 +1,35 @@
+class A:
+    def feature1(self):
+        print("its feature 1")
+    def feature2(self):
+        print("its feature 2")
+
+class B(A):               # inheriting class A
+    def feature3(self):
+        print("its feature 3")
+    def feature4(self):
+        print("its feature 4")
+
+print("class A operations")
+a = A()
+a.feature1()
+a.feature2()
+
+print("class B operations")
+b = B()
+b.feature1()
+b.feature2()
+b.feature3()
+b.feature4()
+
+"""
+output:
+class A operations
+its feature 1
+its feature 2
+class B operations
+its feature 1
+its feature 2
+its feature 3
+its feature 4
+"""
