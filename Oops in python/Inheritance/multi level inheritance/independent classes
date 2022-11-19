@@ -1,0 +1,37 @@
+# Method 2
+"""
+in this method, there are two completely independent classes (whiich are not inheriting one another).
+so in this method, we can create a class which inherits both the independent classes
+"""
+class A:
+    def feature1(self):
+        print("its feature 1")
+    def feature2(self):
+        print("its feature 2")
+
+class B:               # inheriting class A
+    def feature3(self):
+        print("its feature 3")
+    def feature4(self):
+        print("its feature 4")
+
+class C(A,B):
+    def feature5(self):
+        print("its feature 5")
+
+print("class A operations")
+
+c= C()
+c.feature1()
+c.feature2()
+c.feature3()
+c.feature4()
+c.feature5()
+
+"""
+its feature 1
+its feature 2
+its feature 3
+its feature 4
+its feature 5
+"""
