@@ -1,0 +1,44 @@
+# There are Two methods in multi level inheritance
+
+"""
+method 1:
+inheriting dependent classes
+"""
+# Method 1
+class A:
+    def feature1(self):
+        print("its feature 1")
+    def feature2(self):
+        print("its feature 2")
+
+class B(A):               # inheriting class A
+    def feature3(self):
+        print("its feature 3")
+    def feature4(self):
+        print("its feature 4")
+
+class C(B):
+    def feature5(self):
+        print("its feature 5")
+
+c= C()
+c.feature1()
+c.feature2()
+c.feature3()
+c.feature4()
+c.feature5()
+
+
+
+"""
+in the above code, as class B is already inheriting class A, so if we inherit class B in class C then we can access all the methods in class A, class B and class C if we create an object of class C.
+"""
+
+"""
+output:
+its feature 1
+its feature 2
+its feature 3
+its feature 4
+its feature 5
+"""
