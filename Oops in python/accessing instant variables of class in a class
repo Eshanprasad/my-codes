@@ -1,0 +1,24 @@
+class Student:
+    def __init__(self, name, rollno):
+        self.name = name
+        self.rollno = rollno
+        self.lap = self.laptop()
+
+    class laptop:
+        def __init__(self):
+            self.brand = 'HP'
+            self.cpu = 'i55'
+            self.ram = 8
+
+# method 1 (i)
+s1 = Student("eshan", 205)
+print(s1.lap.brand)                  # method 1: can access the instant variables of inner class with the object of outer class
+
+# method 1 (ii)
+lap2 = s1.lap                        # creating a new object(lap2) by using the object of student class
+print(lap2.brand)                    # using the newly created object(lap2) which is created by using object of outer class, to access the instant variables of inner class
+
+
+# method 2
+lap1 = Student.laptop()              # creating an object of inner class
+print(lap1.brand)                     # method 2: can access the instant variables of inner class by creating an object of inner class
