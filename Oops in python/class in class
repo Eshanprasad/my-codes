@@ -1,0 +1,29 @@
+class Student:
+    def __init__(self, name, rollno):
+        self.name = name
+        self.rollno = rollno
+        self.lap = self.laptop()
+    def show(self):
+        print(self.name, self.rollno)
+    class laptop:
+        def __init__(self):
+            self.brand = 'HP'
+            self.cpu = 'i55'
+            self.ram = 8
+
+        def show(self):
+            print(self.brand, self.cpu, self.ram)
+
+
+s1 = Student('eshan', 205)
+s1.show()                                    # object of Student class executes show() method in Student class
+s1.lap.show()                                # object of Student class execuetes show() method in laptop class
+lap1 = Student.laptop()                      # creates an object of laptop class
+lap1.show()                                  # object of laptop class executes show() method in laptop class
+
+"""
+output:
+eshan 205
+HP i55 8
+HP i55 8
+"""
